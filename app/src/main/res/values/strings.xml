@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">币向</string>
+
+    <string name="market_range">%1$s%%</string>
+    <string name="market_price">≈%1$s CNY</string>
+
+    <string name="position_security_add">增加保证金</string>
+    <string name="position_security_reduce">减少保证金</string>
+    <string name="position_security_add_title">可增加保证金：</string>
+    <string name="position_security_reduce_title">可减少保证金：</string>
+    <string name="position_info">%1$s张 %2$s %3$s</string>
+
+    <string name="position_type">%1$s %2$sX</string>
+
+
+    <string name="asset_valuation">资产估值</string>
+    <string name="holding_assets">\t持有资产</string>
+    <string name="position_details">持仓详情\t\t</string>
+    <string name="api_key">获取交易所API KEY</string>
+    <string name="api_authorization">在下方填写你的交易所账号API授权信息</string>
+    <string name="input_api_key">请输入API KEY</string>
+    <string name="input_secret_key">请输入SECRET KEY</string>
+    <string name="input_passphrase_key">请输入PASSPHRASE KEY</string>
+    <string name="scan_qr_code">扫描二维码</string>
+    <string name="binding">绑定</string>
+    <string name="high_24h">24H高:</string>
+    <string name="amount_24h">24H量:</string>
+    <string name="low_24h">24H低:</string>
+    <string name="transaction">成交</string>
+    <string name="price_usd">价格(USD)</string>
+    <string name="price_btc">价格(฿)</string>
+    <string name="direction">方向</string>
+    <string name="quantity_btc">数量(BTC)</string>
+    <string name="quantity_usd">数量(USD)</string>
+    <string name="time">时间</string>
+    <string name="buy">买入</string>
+    <string name="sell">卖出</string>
+    <string name="red_rose_green">红涨绿跌</string>
+    <string name="transaction_confirmation">交易确认提示</string>
+    <string name="cancel">取消</string>
+    <string name="done">完成</string>
+    <string name="sell_quantity_usd">卖出数量</string>
+    <string name="market_price_all">市价全平</string>
+    <string name="close_position">平仓</string>
+    <string name="limit_order">限价单</string>
+    <string name="commission_price_usd">委托价(USD)</string>
+    <string name="no_show_next">\t下次不再显示</string>
+    <string name="confirm">确定</string>
+    <string name="unbind_tip">解除绑定后，将无法继续记录和统计资产，且该交易所记录数据将被清除。确定解绑？</string>
+    <string name="account_benefits">看看账户权益\t\t</string>
+    <string name="week">当周</string>
+    <string name="deal_done">已成交</string>
+    <string name="about_us">\t关于我们</string>
+    <string name="share_app">\t分享此应用</string>
+    <string name="setting">\t设置</string>
+    <string name="all">全部</string>
+    <string name="business">交易</string>
+    <string name="okex">OKEX</string>
+    <string name="bitmex">BITMEX</string>
+    <string name="stay_tuned">敬请期待</string>
+    <string name="open_position">开仓</string>
+    <string name="lever">杠杆</string>
+    <string name="trade_market_price">市场价</string>
+    <string name="buy_one_price">买一价</string>
+    <string name="sell_one_price">卖一价</string>
+    <string name="optional">自选</string>
+    <string name="add_optional">\t添加自选</string>
+    <string name="add_optional_nospace">添加自选</string>
+    <string name="ranking_name">排名|名称</string>
+    <string name="latest_price_usd">最新价USD</string>
+    <string name="quote_change">涨跌幅</string>
+    <string name="platform_increase">平台涨幅榜</string>
+    <string name="quantity_z">数量(张)</string>
+    <string name="main_indicator">主图指标</string>
+    <string name="figure_indicator">附图指标</string>
+    <string name="hide">影藏</string>
+    <string name="buy_open_bullish">买入开多(看涨)</string>
+    <string name="sell_open_bearish">卖出开空(看跌)</string>
+    <string name="available">可用:</string>
+    <string name="can_open">可开多:</string>
+    <string name="can_be_opened">可开空:</string>
+    <string name="quantity_b">数量(B)</string>
+    <string name="latest_index">最新指数:</string>
+    <string name="current_commission">当前委托</string>
+    <string name="realized_profit_loss">已实现盈亏</string>
+    <string name="total_equity">总权益</string>
+    <string name="used_margin">已用保证金</string>
+    <string name="freezing_deposit">冻结保证金</string>
+    <string name="available_margin">可用保证金</string>
+    <string name="rate_return">收益率</string>
+    <string name="opening_price">开仓价格</string>
+    <string name="income_btc">收益(BTC)</string>
+
+</resources>

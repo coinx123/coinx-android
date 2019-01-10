@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/kline_trade_list_prise"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/price_usd"
+        android:textColor="@color/main_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/kline_trade_list_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/kline_trade_list_prise"
+        android:gravity="center_vertical"
+        android:text="@string/direction"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/kline_trade_list_number"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/quantity_z"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/kline_trade_list_time"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/kline_trade_list_number"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12dp" />
+</RelativeLayout>

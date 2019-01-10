@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def lib = rootProject.ext.dependencies
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api "com.android.support:appcompat-v7:27.1.1"
+    testImplementation "junit:junit:${lib.junit}"
+
+    // okhttp
+    api "com.squareup.okhttp3:okhttp:${lib.okhttp}"
+
+    // Retrofit库
+    api "io.reactivex.rxjava2:rxandroid:${lib.rxandroid}"
+    api "io.reactivex.rxjava2:rxjava:${lib.rxjava}"
+    // Android 支持 Retrofit
+    api "com.squareup.retrofit2:retrofit:${lib.retroift}"
+    // 衔接 Retrofit & RxJava
+    api "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${lib.retrofitRxjavaAdapter}"
+    // 支持Gson解析
+    api "com.squareup.retrofit2:converter-gson:${lib.retrofitGson}"
+
+    // OkEx WebSocket 解压使用
+    api "org.apache.commons:commons-compress:${lib.apacheCommon}"
+
+    // dagger2 (dependency injection)
+    api "com.google.dagger:dagger:${lib.dagger}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${lib.dagger}"
+    compileOnly "javax.annotation:jsr250-api:${lib.annotation}"
+
+    //视图绑定（butterknife）
+    api "com.jakewharton:butterknife:${lib.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${lib.butterknife}"
+
+    // material 风格的 dialogs
+    api 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+    api "com.github.zincPower:JRecycleview:${lib.JRecycleView}"
+    api "com.github.zincPower:JPermission:${lib.JPermission}"
+
+    //EventBus
+    api "org.greenrobot:eventbus:${lib.eventBus}"
+
+    api "com.android.support:design:27.1.1"
+
+    api "com.github.bumptech.glide:glide:4.7.1"
+}

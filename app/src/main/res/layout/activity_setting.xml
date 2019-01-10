@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_f4"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_increase_style"
+        style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingTitleStyle"
+            android:text="@string/red_rose_green" />
+
+        <ToggleButton
+            android:id="@+id/tb_increase_style"
+            style="@style/SettingToggle" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_commit_affirm"
+        style="@style/SettingItemStyle">
+
+        <TextView
+            style="@style/SettingTitleStyle"
+            android:text="@string/transaction_confirmation" />
+
+        <ToggleButton
+            android:id="@+id/tb_commit_affirm"
+            style="@style/SettingToggle" />
+
+    </LinearLayout>
+
+</LinearLayout>

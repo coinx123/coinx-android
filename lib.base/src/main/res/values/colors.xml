@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jColorToolbar">@android:color/white</color>
+
+    <color name="jColorTitle">#333333</color>
+
+    <color name="jWidgetStartAndPauseColor">#999999</color>
+    <color name="jWidgetCircleColor">#999999</color>
+    <color name="jWidgetProgressColor">#308fff</color>
+
+    <color name="jColorStateBar">#ffffff</color>
+    <color name="jColorStateBarAlpha">#55333333</color>
+
+    <color name="color_gray_alpha">#88333333</color>
+</resources>

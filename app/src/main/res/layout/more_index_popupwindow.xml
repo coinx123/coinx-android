@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/time_more_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/main_indicator"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_MA"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="MA"
+            android:textColor="@color/select_blue"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_BOLL"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BOLL"
+            android:textColor="@color/time_blue"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/figure_indicator"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_MACD"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="MACD"
+            android:textColor="@color/select_blue"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_KDJ"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="KDJ"
+            android:textColor="@color/time_blue"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_RSI"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="RSI"
+            android:textColor="@color/time_blue"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_WR"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="WR"
+            android:textColor="@color/time_blue"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_gone"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/hide"
+            android:textColor="@color/time_blue"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

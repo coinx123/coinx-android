@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_commonview" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bind"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/future_trade_bg_red_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bind_texture">
+
+            <RelativeLayout
+                android:id="@+id/rl_bind_show"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_bind_show"
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/show_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/asset_valuation"
+                android:textColor="@color/half_white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_assets_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_assets"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:text="$ 0.00"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_btc_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_assets_value"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:text="0.0 BTC "
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/light_f4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/holding_assets"
+            android:text="@string/holding_assets"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hold_assets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+</LinearLayout>

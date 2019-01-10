@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    dexOptions {
+//        incremental true
+//    }
+
+    sourceSets {
+
+        main{
+            java.srcDirs = ['src/main/java','src/main/coin']
+        }
+
+    }
+
+}
+
+dependencies {
+    def lib = rootProject.ext.dependencies
+
+    testImplementation "junit:junit:${lib.junit}"
+
+    annotationProcessor "com.google.dagger:dagger-compiler:${lib.dagger}"
+    compileOnly "javax.annotation:jsr250-api:${lib.annotation}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${lib.butterknife}"
+
+    implementation 'com.anthonycr.bonsai:bonsai:1.1.0'
+
+    implementation project(":lib.base")
+
+    implementation project(':KLineChartLib')
+
+    //滚轮控件
+    implementation 'com.weigan:loopView:0.1.2'
+
+    // zxing 二维码
+    implementation 'com.google.zxing:core:3.3.0'
+
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+
+    // 轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //腾讯崩溃日志收集和更新
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+
+    api project(":mvpCreator")
+
+    def netcipherVersion = '2.0.0-alpha1'
+    compile "info.guardianproject.netcipher:netcipher:$netcipherVersion"
+    compile "info.guardianproject.netcipher:netcipher-webkit:$netcipherVersion"
+}

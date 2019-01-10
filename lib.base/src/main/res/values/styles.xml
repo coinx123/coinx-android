@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="JFrameDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TranslucentNoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 不显示title，作用于 Activity 上 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 不显示title，作用于 AppCompatActivity 上 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 窗口背景色，设置成半透明的即可 -->
+        <item name="android:windowBackground">@color/color_gray_alpha</item>
+        <!-- 不开沉浸式 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- 背景缓存颜色 -->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!-- 是否悬浮在activity上，设置了就没有占满整个屏幕 -->
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="JFrameDialogDefaultAnim">
+        <item name="android:windowEnterAnimation">@anim/j_dialog_defalut_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/j_dialog_defalut_exit_anim</item>
+    </style>
+
+    <style name="Toolbar.Style" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/jColorToolbar</item><!--背景栏颜色-->
+        <item name="colorPrimaryDark">@color/jColorToolbar</item><!--状态栏颜色-->
+        <item name="colorAccent">@color/jColorToolbar</item><!--带选中等状态控件的颜色-->
+        <item name="colorControlNormal">@color/jColorTitle</item><!--图标颜色左边及右边-->
+        <item name="actionMenuTextColor">@color/jColorTitle</item><!--右边文字颜色 优先级高与 textColorPrimary-->
+    </style>
+
+</resources>

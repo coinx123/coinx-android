@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        app:tabBackground="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextColor="@color/sub_text_color"
+        android:layout_alignParentBottom="true"
+        />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_above="@id/tab"
+        style="@style/line" />
+
+    <com.coin.libbase.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@id/v_divider"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/v_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

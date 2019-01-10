@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'com.squareup:javapoet:1.9.0'
+
+    // dagger2 (dependency injection)
+    implementation "com.google.dagger:dagger:2.11"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

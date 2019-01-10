@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/time_more_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_15minute"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="15分钟"
+        android:textColor="@color/time_blue"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_30minute"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="30分钟"
+        android:textColor="@color/time_blue"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_1week"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="周线"
+        android:textColor="@color/time_blue"
+        android:textSize="12dp" />
+
+</LinearLayout>

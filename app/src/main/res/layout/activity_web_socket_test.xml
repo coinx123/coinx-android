@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="login"
+                android:text="登录" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="close"
+                android:text="断开登录" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="closeMockErrorClose"
+                android:text="模拟意外中断(WebSocket会重连)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="closeSub"
+                android:text="断开订阅" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="closeMockErrorCloseSub"
+                android:text="模拟意外中断订阅(WebSocket会重连)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subDetail"
+                android:text="订阅合约详情" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubDetail"
+                android:text="取消订阅合约详情" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subDetail"
+                android:text="订阅合约详情" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubDetail"
+                android:text="取消订阅合约详情" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subKLine"
+                android:text="订阅K线" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubKLine"
+                android:text="取消K线" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subDepth"
+                android:text="订阅合约市场深度(200增量数据返回)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubDepth"
+                android:text="取消订阅合约市场深度(200增量数据返回)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subAllDepth"
+                android:text="订阅合约市场深度(全量返回)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubAllDepth"
+                android:text="取消订阅合约市场深度(全量返回)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subTrade"
+                android:text="订阅合约交易信息" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubTrade"
+                android:text="取消订阅合约交易信息" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subIndex"
+                android:text="订阅合约市场深度(全量返回)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubIndex"
+                android:text="取消订阅合约市场深度(全量返回)" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="subForecast"
+                android:text="订阅合约预估交割价格" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="unsubForecast"
+                android:text="取消订阅合约预估交割价格" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

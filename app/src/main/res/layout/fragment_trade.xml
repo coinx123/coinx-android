@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/business"
+        android:textColor="@color/main_text_color"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_bitmex_icon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_bitmex_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bitmex_icon" />
+
+            <TextView
+                android:id="@+id/tv_bitmex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_bitmex_icon"
+                android:fontFamily="BOLD"
+                android:gravity="center_horizontal"
+                android:text="@string/bitmex"
+                android:textColor="@color/time_blue"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_bitmex_line"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="BOLD"
+                android:background="@color/blue"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_okex_icon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_okex_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/okex_icon" />
+
+            <TextView
+                android:id="@+id/tv_okex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_okex_icon"
+                android:gravity="center_horizontal"
+                android:text="@string/okex"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_okex_line"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+
+    <com.coin.libbase.widget.NoScrollViewPager
+        android:id="@+id/trade_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

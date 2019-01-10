@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="BOLD"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/main_text_color"
+            android:textSize="16dp"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tv_show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/sub_text_color"
+            android:textSize="11dp"
+            tools:text="0101" />
+
+        <TextView
+            android:id="@+id/tv_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/sub_text_color"
+            android:textSize="11dp"
+            tools:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_click_collection"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_click_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/collection" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_percentage"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/ll_click_collection"
+        android:background="@drawable/future_trade_bg_green"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_percentage">
+
+        <TextView
+            android:id="@+id/tv_usa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/main_text_color"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/tv_cny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_usa"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="Ұ0.00"
+            android:textColor="@color/sub_text_color"
+            android:textSize="11dp" />
+    </RelativeLayout>
+</RelativeLayout>

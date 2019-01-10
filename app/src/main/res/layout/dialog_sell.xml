@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_blue_rect_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/price_usd"
+                android:textColor="@color/position_sell_dialog_tip_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_price_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="0.000"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_price_clear"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@mipmap/icon_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sell"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_blue_rect_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sell_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/sell_quantity_usd"
+                android:textColor="@color/position_sell_dialog_tip_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sell_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="0"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_sell_clear"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@mipmap/icon_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_market_sell"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_white_4dp_round_bg"
+                android:gravity="center"
+                android:text="@string/market_price_all"
+                android:textColor="@color/select_blue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_common_sell"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_4dp_round_bg"
+                android:gravity="center"
+                android:text="@string/close_position"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_key_board"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:numColumns="3"></GridView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bing"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@drawable/future_trade_bg_red_10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bind_texture">
+
+        <TextView
+            android:id="@+id/tv_bind_name"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/okex_icon_round" />
+
+        <TextView
+            android:id="@+id/tv_bind_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/tv_bind_name"
+            android:gravity="center_vertical"
+            android:text="OKEX"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_bind_show"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_bind_show"
+                android:layout_width="20dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/show_icon"
+                android:gravity="center"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_assets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bind_name"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/asset_valuation"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_assets_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_assets"
+            android:layout_marginLeft="25dp"
+            android:text="$ 00.00"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_position_to"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ll_bind_show"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_position_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/forwad_icon"
+                android:text="@string/account_benefits"
+                android:textColor="@color/half_white"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl_bind"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/shape_bg_white_round"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bind_red_icon"
+                android:text=" 绑定"
+                android:textColor="@color/bind_red"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

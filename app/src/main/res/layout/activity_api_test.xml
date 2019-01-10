@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="goToWebSocket"
+                android:text="前往WebSocket" />
+
+            <Button
+                android:id="@+id/btn_wallet_req"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="请求钱包（OkEx）" />
+
+            <Button
+                android:id="@+id/btn_timestamp_req"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="请求时间戳（OkEx）" />
+
+            <Button
+                android:id="@+id/btn_currency_list_req"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="请求币种列表（OkEx）" />
+
+            <Button
+                android:id="@+id/btn_server_time_utils_test"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="测试时间工具类" />
+
+            <Button
+                android:id="@+id/FuturesPositionRes"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="FuturesPositionRes" />
+
+            <Button
+                android:id="@+id/SingleFuturesPositionRes"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="SingleFuturesPositionRes" />
+            <Button
+                android:id="@+id/accounts"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="单个币种合约账户信息" />
+            <Button
+                android:id="@+id/ledger"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 账单流水查询" />
+
+            <Button
+                android:id="@+id/FuturesAccountsLedger"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="下单" />
+
+            <Button
+                android:id="@+id/FuturesAccountsLedgerCan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="撤单" />
+
+            <Button
+                android:id="@+id/FuturesAccountsLedgerlist"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="获取订单列表" />
+
+            <Button
+                android:id="@+id/instruments"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 获取合约信息" />
+
+            <Button
+                android:id="@+id/instrumentsbook"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 获取深度数据" />
+
+            <Button
+                android:id="@+id/ticker"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 获取全部ticker信息" />
+            <Button
+                android:id="@+id/trades"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 获取成交数据" />
+            <Button
+                android:id="@+id/kline"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 获取K线数据" />
+            <Button
+                android:id="@+id/FuturesInstrumentsIndexRes"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text=" 获取指数信息" />
+            <Button
+                android:id="@+id/open_interest"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="获取平台总持仓量" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

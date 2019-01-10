@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_name_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:layout_toRightOf="@id/tv_name"
+        android:text="---"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <com.coin.exchange.widget.LeanView
+        android:id="@+id/leanView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        app:bgColor="@color/color_delegation_cancel"
+        app:text="已撤销"
+        app:textColor="@android:color/white"
+        app:textSizeSp="8" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_blue_round_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="2dp"
+        android:text="撤销"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_deal_type"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/future_trade_bg_red"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="---"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_control_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_deal_type"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/tv_deal_type"
+        android:text="---"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_fee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_deal_type"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="手续费(BTC)"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_fee_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_fee_name"
+        android:layout_below="@id/tv_fee_name"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_security_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_fee_name"
+        android:layout_below="@id/tv_fee_num"
+        android:layout_marginTop="20dp"
+        android:text="保证金(BTC)"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_security_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_security_name"
+        android:layout_below="@id/tv_security_name"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_delegation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_deal_type"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="委托价(USD)"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_delegation_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_delegation_name"
+        android:layout_below="@id/tv_delegation_name"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_done_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_deal_type"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/tv_delegation_name"
+        android:text="成交均价(USD)"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_done_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_done_name"
+        android:layout_below="@id/tv_done_name"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_delegation_count_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_delegation_num"
+        android:layout_below="@id/tv_delegation_num"
+        android:layout_marginTop="20dp"
+        android:text="委托量"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_delegation_count_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_delegation_count_name"
+        android:layout_below="@id/tv_delegation_count_name"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_done_count_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_done_num"
+        android:layout_below="@id/tv_done_num"
+        android:layout_marginTop="20dp"
+        android:text="成交量"
+        android:textColor="@color/sub_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_done_count_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_done_count_name"
+        android:layout_below="@id/tv_done_count_name"
+        android:text="---"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/tv_done_count_num"
+        android:layout_marginTop="20dp"
+        android:background="@color/position_color_divider" />
+
+</RelativeLayout>

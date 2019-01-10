@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/btc_coin"
+            android:text="  BTC"
+            android:textColor="@color/main_text_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_realized_margin"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_all_equity"
+            android:gravity="right"
+            android:text="@string/realized_profit_loss"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_realized_margin_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_realized_margin"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_all_equity_value"
+            android:gravity="right"
+            android:text="00.00"
+            android:textColor="@color/main_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_all_equity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="@string/total_equity"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_all_equity_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_all_equity"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="00.00"
+            android:textColor="@color/main_text_color"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_used_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/used_margin"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_used_margin_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_used_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="0.0"
+            android:textColor="@color/main_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_freezing_deposit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="@string/freezing_deposit"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_freezing_deposit_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_freezing_deposit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="00.00"
+            android:textColor="@color/main_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_available_margin"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_freezing_deposit"
+            android:gravity="right"
+            android:text="@string/available_margin"
+            android:textColor="@color/sub_text_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_available_margin_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_available_margin"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_freezing_deposit_value"
+            android:gravity="right"
+            android:text="00.00"
+            android:textColor="@color/main_text_color"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_f4" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/trade_blue</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="MainAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/trade_blue</item>
+        <item name="android:windowBackground">@mipmap/base_ad_bg</item>
+    </style>
+
+    <!--1dp的横线line-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <!--Kined 高低市值字段-->
+    <style name="kline_show">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/time_blue</item>
+    </style>
+
+    <!--Kined 高低市值字段-->
+    <style name="kline_show_value">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/sub_text_color</item>
+    </style>
+
+    <style name="SettingToggle">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">28.75dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/selector_btn_toggle</item>
+        <item name="android:checked">false</item>
+        <item name="android:text">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:textOn">""</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="SettingTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color_6</item>
+    </style>
+
+    <style name="SettingItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_white_rect_bg</item>
+    </style>
+
+    <style name="BindItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="BindEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textColorHint">@color/sub_text_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="BindCloseStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/clear_show</item>
+        <item name="android:padding">12.5dp</item>
+        <item name="android:layout_marginRight">22.5dp</item>
+    </style>
+
+</resources>

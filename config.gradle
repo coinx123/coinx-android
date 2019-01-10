@@ -1,0 +1,30 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            applicationId    : "com.coin.exchange",
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+    ]
+
+    dependencies = [
+            "JRecycleView"         : "0.2.0",
+            "JPermission"          : "0.5",
+            "butterknife"          : "8.6.0",
+            "dagger"               : "2.11",
+            "apacheCommon"         : "1.18",
+            "retrofitGson"         : "2.4.0",
+            "retrofitRxjavaAdapter": "1.0.0",
+            "retroift"             : "2.4.0",
+            "rxjava"               : "2.1.14",
+            "rxandroid"            : "2.0.2",
+            "okhttp"               : "3.11.0",
+//            "appcompatV7"          : "27.1.1",
+            "junit"                : "4.12",
+            "annotation"           : "1.0",
+            "eventBus"             : "3.1.1",
+            "supportDesign"        : "26.1.0",
+    ]
+}

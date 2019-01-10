@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"
+        android:background="@color/white"/>
+
+    <com.coin.libbase.widget.NoScrollViewPager
+        android:id="@+id/mine_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:clipToPadding="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/tv_one"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/future_trade_bg_blue_20dp"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/tv_two"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/shape_rank_other_bg" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_f4" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@mipmap/about_icon"
+        android:gravity="center_vertical"
+        android:text="@string/about_us"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="40dp"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/tv_shape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@mipmap/shape_icon"
+        android:gravity="center_vertical"
+        android:text="@string/share_app"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="40dp"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@mipmap/setting"
+        android:gravity="center_vertical"
+        android:text="@string/setting"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_f4" />
+</LinearLayout>

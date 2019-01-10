@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:endColor="@color/color_red_e4"
+        android:startColor="@color/color_red_f8" />
+    <!-- android:angle="270"  代表方向， 270表示从上到下，180表示从右到左，默认从左-->
+    <!-- 矩形的圆角半径 -->
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+</shape>

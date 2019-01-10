@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_trade_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/action_left_common_vector"
+            tools:ignore="VectorDrawableCompat" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/trade_tab"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_trade_back"
+            app:tabBackground="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/blue"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium"
+            app:tabTextColor="@color/time_blue" />
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <com.coin.libbase.widget.NoScrollViewPager
+        android:id="@+id/trade_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

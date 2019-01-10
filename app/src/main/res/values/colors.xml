@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_c5">#ffbfc5</color>
+    <color name="half_white">#88ffffff</color>
+    <color name="blue">#2196F3</color>
+    <color name="select_blue">#4b96ee</color>
+    <color name="light_blue">#a1bdde</color>
+    <color name="time_blue">#a1bcde</color>
+    <color name="red">#f64d5d</color>
+    <color name="green">#2bb00c</color>
+
+    <!-- 浅色分割线 -->
+    <color name="divider_color">#dddddd</color>
+    <!-- 字体主色 -->
+    <color name="main_text_color">#333333</color>
+    <!-- 字体辅助色 -->
+    <color name="sub_text_color">#999999</color>
+    <color name="text_color_6">#666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+
+    <color name="selected_light">#0F000000</color>
+
+    <color name="main_red">#f54e5b</color>
+    <color name="main_green">#2ab00a</color>
+    <color name="bind_red">#e64050</color>
+
+    <color name="kline_red">#f54d5d</color>
+    <color name="confirm_red">#f54d5e</color>
+    <color name="kline_green">#2bb10d</color>
+    <color name="trade_blue">#4a95ed</color>
+    <color name="trade_empty_blue">#cfdeee</color>
+    <color name="main_gray">#cccccc</color>
+
+    <color name="rank_one">#f57d57</color>
+    <color name="rank_two">#f5a957</color>
+    <color name="rank_three">#f5dd57</color>
+    <color name="rank_other">#cadaef</color>
+    <color name="time_more_bg">#f7fafc</color>
+
+    <color name="swipe_color_1">#ff99cc00</color>
+    <color name="swipe_color_2">#ffff4444</color>
+    <color name="light_f4">#f4f4f4</color>
+    <color name="swipe_color_3">#ff0099cc</color>
+    <color name="swipe_color_4">#ff669900</color>
+
+    <color name="position_color_divider">#f4f4f4</color>
+    <color name="position_sell_dialog_unselect_color">#d0ddee</color>
+    <color name="position_sell_dialog_select_color">@color/select_blue</color>
+    <color name="position_sell_dialog_tip_color">#a1bcde</color>
+
+    <!-- 键盘界面颜色 -->
+    <color name="keyboard_text_color">#303030</color>
+    <color name="keyboard_gray">#e0e0e0</color>
+    <color name="gray_line">#dadada</color>
+    <color name="dark_gray">#a0a0a0</color>
+
+    <color name="color_slice_unselect">#d0ddee</color>
+    <color name="color_slice_left">#f54e5b</color>
+    <color name="color_slice_right">#2ab00a</color>
+
+    <color name="color_delegation_done">#25dfb8</color>
+    <color name="color_delegation_cancel">#f89b4b</color>
+
+    <color name="color_green_right">#07cd85</color>
+    <color name="color_red_right">#dd0b91</color>
+
+    <color name="color_red_f8">#f85366</color>
+    <color name="color_red_e4">#e43f4e</color>
+
+    <color name="color_black_f83b">#3b4551</color>
+    <color name="color_black_2a">#2a3034</color>
+</resources>
